@@ -1,0 +1,5 @@
+<div class="calculator">
+    <app-display [value]="currentInput || '0'"></app-display>
+    <app-keypad (keyPress)="onKeyPress($event)"></app-keypad>
+  </div>
+  
