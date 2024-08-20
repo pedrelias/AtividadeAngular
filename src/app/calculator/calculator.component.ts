@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { DisplayComponent } from '../display/display.component';
+import { KeypadComponent } from '../keypad/keypad.component';
 
 @Component({
   selector: 'app-calculator',
+  standalone: true,
+  imports: [DisplayComponent, KeypadComponent],
   templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.css']
+  styleUrls: ['./calculator.component.css'],
 })
+
 export class CalculatorComponent {
   currentInput: string = '';
   previousInput: string = '';

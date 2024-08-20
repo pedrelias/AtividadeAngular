@@ -2,8 +2,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-keypad',
+  standalone: true,
   templateUrl: './keypad.component.html',
-  styleUrls: ['./keypad.component.css']
+  styleUrls: ['./keypad.component.css'],
 })
 export class KeypadComponent {
   @Output() keyPress = new EventEmitter<string>();
